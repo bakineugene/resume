@@ -14,12 +14,18 @@
 				<dl>
 					<dt>{{i18_profession|blank>Profession}}</dt>
 					<dd>{{basics.label}}</dd>
-
+					
 					<dt>{{i18_location|blank>Location}}</dt>
 					<dd>{{basics.location.country}},  {{basics.location.region}},  {{basics.location.city}} </dd>
-
-					<dt>{{i18_experience|blank>Work Experience}}</dt>
-					<dd><time datetime="{{basics.startedWorking}}">{{basics.startedWorkingText}}</time></dd>
+					
+					<dt>{{i18_languages|blank>Languages}}</dt>
+					<dd>
+						<ul class="tags__list">
+							{{basics.languages}}
+							<li class="tags__list__item">{{.}}</li>
+							{{/basics.languages}}
+						</ul>
+					</dd>
 				</dl>
 			</section>
 			<section class="contacts">
@@ -41,6 +47,9 @@
 			</section>
 			<section class="summary">
 				<p class="d__lh">{{basics.summary}}</p>
+			</section>
+			<section class="summary">
+				<p class="d__lh">{{basics.interestSummary}}</p>
 			</section>
 		</header>
 		<section class="skills">

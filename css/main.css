@@ -59,8 +59,8 @@ a:hover {
 
 .skills__list__item {
 	display: inline-block;
-	min-width: 140px;
-	margin-bottom: 1.5em;
+	min-width: 100px;
+	margin-bottom: 1em;
 }
 
 .skills__list__item__name {
@@ -82,7 +82,6 @@ a:hover {
 
 
 .summary {
-	padding:20px;
 }
 
 dt {
