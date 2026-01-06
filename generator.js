@@ -45,7 +45,7 @@
 								console.log( err );
 							} else {
 								console.log( "The file " + resumeName + "  was saved in " + resumeDir );
-							} 
+							}
 						});
 					}
 				});

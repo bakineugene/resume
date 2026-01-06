@@ -29,9 +29,6 @@
 					<dt>{{i18_mail|blank>E-mail}}</dt>
 					<dd><a href="mailto:{{basics.email}}">{{basics.email}}</a></dd>
 
-					<dt>{{i18_phone|blank>Phone}}</dt>
-					<dd>{{basics.phone}}</dd>
-
 					{{if basics.website}}
 					<dt>{{i18_website|blank>Website}}</dt>
 					<dd><a href="{{basics.website}}">{{basics.website}}</a></dd>

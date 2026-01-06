@@ -23,7 +23,6 @@
 		"label": "Software Developer",
 		"picture": "",
 		"email": "bakin.eugene@gmail.com",
-		"phone": "+7 (965) 855 4136",
 		"website": null,
 		"summary": "I have a Master degree in Applied Mathematics and Physics from South Ural State University. I continued my career path in theoretical physics, but quickly understood that my passion is more in building things. So I moved to software engineering. I started with some freelance gigs - trying various things from creating javascript plugins to working with Asterisk (Phone System). I found my first work in web-development in outsource company \"Inventix\". Then I switched jobs to work for Rugion - a company which has a number of regional web-portals all over the Russian Federation. My work focuses on both front-end and back-end (PHP, JavaScript). And my desire is to switch completely to front-end development (JavaScript, CSS, HTML).",
 		"location": {
@@ -31,13 +30,7 @@
 			"country": "Russian Federation",
 			"region": "Chelyabinsk region"
 		},
-		"profiles": [
-			{
-				"network": "Twitter",
-				"username": "@eu96ne",
-				"url": "https://twitter.com/eu96ne"
-			}
-		],
+		"profiles": [],
 		"education": [
 			{
 				"institution": "South Ural State University",
@@ -126,53 +119,43 @@
 	"skills": [
 		{
 			"name": "HTML",
-			"level": "4/5",
-			"group": "Front End"
+			"level": "4/5"
 		},
 		{
 			"name": "CSS",
-			"level": "4/5",
-			"group": "Front End"
+			"level": "4/5"
 		},
 		{
 			"name": "JavaScript",
-			"level": "4/5",
-			"group": "Front End"
+			"level": "4/5"
 		},
 		{
 			"name": "PHP",
-			"level": "4/5",
-			"group": "Back End"
+			"level": "4/5"
 		},
 		{
 			"name": "Python",
-			"level": "4/5",
-			"group": "Back End"
+			"level": "4/5"
 		},
 		{
 			"name": "MySQL",
-			"level": "3/5",
-			"group": "DB"
+			"level": "3/5"
 		},
 		{
 			"name": "Cassandra",
-			"level": "3/5",
-			"group": "DB"
+			"level": "3/5"
 		},
 		{
 			"name": "Solr",
-			"level": "3/5",
-			"group": "DB"
+			"level": "3/5"
 		},
 		{
 			"name": "English",
-			"level": "4/5",
-			"group": "Spoken Languages"
+			"level": "4/5"
 		},
 		{
 			"name": "Russian",
-			"level": "5/5",
-			"group": "Spoken Languages"
+			"level": "5/5"
 		}
 	]
 }
