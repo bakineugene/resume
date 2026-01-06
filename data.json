@@ -18,6 +18,39 @@
 		"i18_familiar": "Знаком",
 		"i18_learning": "Изучаю"
 	},
+	"skills": {
+		"actively": [
+			"Java",
+			"Kotlin",
+			"PostgreSQL",
+			"kubernetes",
+            "kafka",
+            "ydb topics",
+			"English"
+		],
+		"learning": [
+			"C++",
+			"C",
+			"STM32",
+			"AVR",
+			"Electronics"
+		],
+		"familiar": [
+			"Python",
+			"MySQL",
+			"Sqlite",
+			"TypeScript",
+			"electron.js",
+			"React",
+			"redux",
+			"JavaScript",
+			"HTML",
+			"CSS",
+			"PHP",
+			"Cordova",
+			"Serbian"
+		]
+	},
 	"basics": {
 		"startedWorkingText": "с 2013",
 		"startedWorking": "2013",
