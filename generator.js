@@ -5,7 +5,7 @@
 	const pathExt = require('path');
 	const Mark = require('markup-js');
 
-	const RESULT_FILE = 'cv.html';
+	const RESULT_FILE = 'index.html';
 	const MARKUP_FILE = 'index.markup';
   const DATA_FILE = 'data.json';
 
