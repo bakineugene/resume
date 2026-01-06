@@ -14,7 +14,9 @@
 		"i18_education": "Education",
 		"i18_work": "Work",
 		"i18_experience": "Work Experience",
-		"i18_level": "Level"
+		"i18_actively_using": "Actively Using",
+		"i18_familiar": "Familiar",
+		"i18_learning": "Learning"
 	},
 	"basics": {
 		"startedWorkingText": "since 2013", 
@@ -114,48 +116,6 @@
 					]
 				}
 			]
-		}
-	],
-	"skills": [
-		{
-			"name": "HTML",
-			"level": "4/5"
-		},
-		{
-			"name": "CSS",
-			"level": "4/5"
-		},
-		{
-			"name": "JavaScript",
-			"level": "4/5"
-		},
-		{
-			"name": "PHP",
-			"level": "4/5"
-		},
-		{
-			"name": "Python",
-			"level": "4/5"
-		},
-		{
-			"name": "MySQL",
-			"level": "3/5"
-		},
-		{
-			"name": "Cassandra",
-			"level": "3/5"
-		},
-		{
-			"name": "Solr",
-			"level": "3/5"
-		},
-		{
-			"name": "English",
-			"level": "4/5"
-		},
-		{
-			"name": "Russian",
-			"level": "5/5"
 		}
 	]
 }

@@ -14,7 +14,9 @@
 		"i18_education": "Образование",
 		"i18_work": "Работа",
 		"i18_experience": "Стаж",
-		"i18_level": "Уровень"
+		"i18_actively_using": "Активно использую",
+		"i18_familiar": "Знаком",
+		"i18_learning": "Изучаю"
 	},
 	"basics": {
 		"startedWorkingText": "с 2013",
@@ -114,44 +116,6 @@
 					]
 				}
 			]
-		}
-	],
-	"skills": [
-		{
-			"name": "HTML",
-			"level": "4/5"
-		},
-		{
-			"name": "CSS",
-			"level": "4/5"
-		},
-		{
-			"name": "JavaScript",
-			"level": "4/5"
-		},
-		{
-			"name": "PHP",
-			"level": "4/5"
-		},
-		{
-			"name": "Python",
-			"level": "4/5"
-		},
-		{
-			"name": "MySQL",
-			"level": "3/5"
-		},
-		{
-			"name": "Сербский язык",
-			"level": "3/5"
-		},
-		{
-			"name": "Английский язык",
-			"level": "4/5"
-		},
-		{
-			"name": "Русский язык",
-			"level": "5/5"
 		}
 	]
 }

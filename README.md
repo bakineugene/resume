@@ -8,7 +8,8 @@ A simple resume generator that creates HTML resumes from JSON data using templat
 ├── generator.js          # Main generator script
 ├── resume/
 │   ├── resume-eng.json  # English resume data
-│   └── resume-ru.json   # Russian resume data
+│   ├── resume-ru.json   # Russian resume data
+│   └── skills.json      # Common skills data
 ├── templates/
 │   └── basic-html/       # HTML template with CSS
 └── build/               # Output directory (created when generating resumes)
@@ -23,10 +24,11 @@ The JSON resume data file should contain the following structure based on the te
 {
   "globals": { },
   "basics": { },
-  "companies": [ ],
-  "skills": [ ]
+  "companies": [ ]
 }
 ```
+
+Note: Skills are stored in a separate `skills.json` file and automatically merged with the resume data during generation.
 
 ### Globals Section
 Contains internationalization strings used in the template:
@@ -42,7 +44,9 @@ Contains internationalization strings used in the template:
   "i18_skills": "Skills",
   "i18_education": "Education",
   "i18_work": "Work",
-  "i18_experience": "Work Experience"
+  "i18_experience": "Work Experience",
+  "i18_actively_using": "Actively Using",
+  "i18_familiar": "Familiar"
 }
 ```
 
@@ -102,16 +106,21 @@ List of work experiences:
 ```
 
 ### Skills Section
-List of skills:
+Skills are stored in a separate `skills.json` file with the following structure:
 
 ```json
 "skills": [
   {
     "name": "Skill Name",
-    "level": "4/5"
+    "level": "4/5",
+    "type": "actively"
   }
 ]
 ```
+
+Skills are displayed in two separate sections in the resume:
+1. "Actively Using" - Skills used regularly (displayed in black)
+2. "Familiar" - Skills with basic knowledge (displayed in gray)
 
 ## Template Variables Reference
 
@@ -140,9 +149,12 @@ List of skills:
 
 ### Skills Section
 - `{{i18_skills}}` - "Skills" section heading
+- `{{i18_actively_using}}` - "Actively Using" section heading
+- `{{i18_familiar}}` - "Familiar" section heading
 - `{{skills}}` - Skills array (repeating section)
 - `{{name}}` - Skill name
 - `{{level}}` - Skill level
+- `{{type}}` - Skill type (actively/familiar)
 
 ### Education Section
 - `{{i18_education}}` - "Education" section heading

@@ -9,7 +9,6 @@
 	<body class="d__mw u__centerW">
 		<header>
 			<h1>{{basics.name}}</h1>
-			<img class="avatar" src="./../img/avatar.jpeg" alt="{{basics.name}}"></img>
 			<section class="general">
 				<h1>{{i18_general|blank>General}}</h1>
 				<dl>
@@ -46,25 +45,32 @@
 		</header>
 		<section class="skills">
 			<h1>{{i18_skills|blank>Skills}}</h1>
-			<ul class="skills__list">
-				{{skills}}
-				<li class="skills__list__item">
-					<span class=skills__list__item__name>{{name}}</span> : <span class="skills__list__item__level">{{level}}</span>
+			
+			<h2>{{i18_actively_using|blank>Actively Using}}</h2>
+			<ul class="skills__list skills__list--actively">
+				{{skills.actively}}
+				<li class="skills__list__item skills__list__item--actively">
+					<span class="skills__list__item__name">{{.}}</span>
 				</li>
-				{{/skills}}
+				{{/skills.actively}}
 			</ul>
-		</section>
-		<section class="education">
-			<h1>{{i18_education|blank>Education}}</h1>
-			<ul>
-				{{basics.education}}
-				<li class="education">
-					<h2 class="education__name">{{if website}}<a href="{{website}}">{{/if}}{{institution}}{{if website}}</a>{{/if}}</h2>
-					<span class="education__degree">{{degree}}</span>
-					<span class="education__time">{{startDate}} {{if endDate}}- {{endDate}}{{/if}}</span>
-					<div class="education__type">{{area}}</div>
+			
+			<h2>{{i18_learning|blank>Learning}}</h2>
+			<ul class="skills__list skills__list--learning">
+				{{skills.learning}}
+				<li class="skills__list__item skills__list__item--learning">
+					<span class="skills__list__item__name">{{.}}</span>
 				</li>
-				{{/basics.education}}
+				{{/skills.learning}}
+			</ul>
+			
+			<h2>{{i18_familiar|blank>Familiar}}</h2>
+			<ul class="skills__list skills__list--familiar">
+				{{skills.familiar}}
+				<li class="skills__list__item skills__list__item--familiar">
+					<span class="skills__list__item__name">{{.}}</span>
+				</li>
+				{{/skills.familiar}}
 			</ul>
 		</section>
 		<section class="work u__whole">
@@ -95,6 +101,19 @@
 					</ul>
 				</li>
 				{{/companies}}
+			</ul>
+		</section>
+		<section class="education">
+			<h1>{{i18_education|blank>Education}}</h1>
+			<ul>
+				{{basics.education}}
+				<li class="education">
+					<h2 class="education__name">{{if website}}<a href="{{website}}">{{/if}}{{institution}}{{if website}}</a>{{/if}}</h2>
+					<span class="education__degree">{{degree}}</span>
+					<span class="education__time">{{startDate}} {{if endDate}}- {{endDate}}{{/if}}</span>
+					<div class="education__type">{{area}}</div>
+				</li>
+				{{/basics.education}}
 			</ul>
 		</section>
 	</body>

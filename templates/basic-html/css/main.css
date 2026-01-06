@@ -59,7 +59,6 @@ a:hover {
 
 .skills__list__item {
 	display: inline-block;
-	width: 30%;
 	min-width: 140px;
 	margin-bottom: 1.5em;
 }
@@ -70,6 +69,15 @@ a:hover {
 
 .skills__list__item__level {
 	font-style: italic;
+}
+
+.skills__list__item--familiar .skills__list__item__name {
+	color: #888888;
+	font-weight: normal;
+}
+
+.skills__list__item--familiar .skills__list__item__level {
+	color: #888888;
 }
 
 

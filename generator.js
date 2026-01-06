@@ -15,18 +15,35 @@
 	var Mark = require( "markup-js" );
 
 	function generateResumes () {
-		walk( JSON_DIR, function (item, path, fullPath) {
-			if ( pathExt.extname(item) === EXTENSION_JSON ) {
+		// Read common skills file
+		fse.readFile( JSON_DIR + '/skills.json', 'utf8', function ( err, skillsData ) {
+			if ( err ) {
+				console.log( err );
+				return;
+			}
+			
+			var commonSkills = JSON.parse( skillsData );
+			
+			walk( JSON_DIR, function (item, path, fullPath) {
+				// Skip skills.json and non-JSON files
+				if ( item === 'skills.json' || pathExt.extname(item) !== EXTENSION_JSON ) {
+					return;
+				}
+				
 				fse.readFile( fullPath, 'utf8', function ( err, data ) {
 					if ( err ) {
 						console.log( err );
 					} else {
+						var resumeData = JSON.parse( data );
+						// Add common skills to resume data with new structure
+						resumeData.skills = commonSkills.skills;
+						
 						fse.copy( TEMPLATES_DIR, DESTINATION_DIR + '/' + pathExt.basename( item, EXTENSION_JSON ), function () {
-							generateResume( pathExt.basename( item, EXTENSION_JSON ), DESTINATION_DIR + '/' + pathExt.basename( item, EXTENSION_JSON ), JSON.parse( data ) );
+							generateResume( pathExt.basename( item, EXTENSION_JSON ), DESTINATION_DIR + '/' + pathExt.basename( item, EXTENSION_JSON ), resumeData );
 						});
 					}
 				})
-			}
+			});
 		});
 	}
 
